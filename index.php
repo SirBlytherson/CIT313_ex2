@@ -42,16 +42,6 @@ function output() {
 	return $response;
 }
 
-function id($length)
-{
-	$alphabet = str_split('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890');
-	$id = '';
-	for($i = 0; $i < $length; $i += 1) {
-		$id .= $alphabet[rand(0,count($alphabet)-1)]; 
-	}
-	return $id;
-}
-
 ?>
 
 <!DOCTYPE html>
